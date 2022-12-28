@@ -8,6 +8,6 @@ export const executeBasicAuthenticationService
 })
 
 export const executeJwtAuthenticationService
-= (username, password) => apiClient.get(`/authenticate`
+= (username, password) => apiClient.post(`/authenticate`
     ,{username, password}
 )
